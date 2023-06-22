@@ -1,15 +1,23 @@
 import React from 'react';
-import { StyledHeader } from './Header.styled.js';
+import { Container } from './styles/Container.styled.js';
+import { StyledHeader, Nav, Logo } from './styles/Header.styled.js';
+import { Button } from './styles/Button.styled.js';
 
- const FirstComponent = () => {
+ const Header = () => {
                
          return (
 
-           <StyledHeader bg = 'red'>   
-            <h1>Styled Components</h1>
-           </StyledHeader>
+          <StyledHeader>
+            <Container>
+               <Nav>
+                 <Logo src = './images/logo.svg' alt = 'logo'/>
+                 <Button>Try It Free</Button>
+              </Nav>
+         
+             </Container>
+          </StyledHeader>
 
     )
  }
 
- export default FirstComponent;
+ export default Header;
