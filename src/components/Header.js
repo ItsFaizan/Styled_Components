@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from './styles/Container.styled.js';
-import { StyledHeader, Nav, Logo } from './styles/Header.styled.js';
+import { StyledHeader, Nav, Logo, Image } from './styles/Header.styled.js';
 import { Button } from './styles/Button.styled.js';
-
+import { Flex } from './styles/Flex.styled.js';
  const Header = () => {
-               
+                
          return (
 
           <StyledHeader>
@@ -13,7 +13,23 @@ import { Button } from './styles/Button.styled.js';
                  <Logo src = './images/logo.svg' alt = 'logo'/>
                  <Button>Try It Free</Button>
               </Nav>
-         
+               <Flex>
+                  <div>
+                     <h1>
+                        Build the Community Your Fans will Love
+                     </h1>
+                     <p>
+                         Huddle re-imagines the way we build communities. You have a voice,
+                         but so does your audience. Create connections with your users as
+                         you engage in genuine discussion.
+                    </p>
+
+               <Button bg='#ff0099' color='#fff'>
+                        Get Started For Free
+               </Button>
+                  </div>
+                  <Image src='./images/illustration-mockups.svg' alt='' />
+               </Flex>
              </Container>
           </StyledHeader>
 
